@@ -1,4 +1,4 @@
-# distance_hcsr04
+# distanceMeasurement_hcsr04
 
 - Objective:
 
@@ -20,7 +20,7 @@ The repository consists of following files:
 
 Following is the Connection Diagram for the Working Model:
 
-![distance_hcsr04_connectionDiagram](distance_hcsr04_connect_diagram.png)
+![distanceMeasurement_hcsr04_connectionDiagram](distance_hcsr04_connect_diagram.png)
 
 Here, we used BUILTIN LED from 13th pin to blink in various pattern based on the distance between the sensor and the object.
 
@@ -32,4 +32,8 @@ The different types of LED pattern based on the distance are:
 
 Following is the flowchart for the working Source:
 
-![distance_hcsr04_FlowChart](assets/distance_hcsr04.png)
+![distanceMeasurement_hcsr04_FlowChart](assets/distance_hcsr04.png)
+
+- Version:
+
+    Distance Measurement v1.0.0
