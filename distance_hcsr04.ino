@@ -1,7 +1,5 @@
-#include <HCSR04.h>
-
 /*
-Module: ard_ultsonic.ino
+Module: distance_hcsr04.ino
 Function:
         To measure the distance between an object and source using Arduino MEGA board and Ultrasonic sensor HC-SR04
 Copyright notice:
@@ -16,8 +14,9 @@ Author:
         Pranau R, MCCI Corporation   May 2022
 */
 
-HCSR04 hc(11, 12);
+#include <HCSR04.h>
 
+HCSR04 hc(11, 12);
 int distance;
 
 void setup()
@@ -28,10 +27,10 @@ void setup()
 
 void loop()
   {
-  Serial.print(hc.dist());
+  distance = hc.dist();
+  Serial.print(distance);
   Serial.println(" cm");
 
-  distance = hc.dist();
   int count = 0;
 
   if (distance < 10)
